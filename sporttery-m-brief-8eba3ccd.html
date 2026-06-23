@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>竞彩网 · 看赛事 聊竞彩</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: #f7f3eb;
+      font-family: "Noto Serif SC", "Source Han Serif SC", "SimSun", "Times New Roman", serif;
+      color: #2f2a24;
+      line-height: 1.7;
+      padding: 0 20px;
+    }
+    .wrap {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2.5rem 0 3rem;
+    }
+
+    /* hero */
+    .hero {
+      text-align: center;
+      padding: 4rem 0 2.5rem;
+      border-bottom: 1px solid #d9cfbf;
+    }
+    .hero h1 {
+      font-weight: 500;
+      font-size: 2.6rem;
+      letter-spacing: 0.06em;
+      color: #3c3229;
+      margin-bottom: 0.5rem;
+    }
+    .hero .subhead {
+      font-size: 1rem;
+      color: #7a6e60;
+      max-width: 640px;
+      margin: 0 auto 0.8rem;
+      line-height: 1.6;
+    }
+    .hero .tagline {
+      display: inline-block;
+      background: #ddd2c0;
+      color: #2f2a24;
+      padding: 0.25rem 1.2rem;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      letter-spacing: 0.04em;
+    }
+
+    /* section */
+    section {
+      margin-top: 3rem;
+    }
+    h2 {
+      font-weight: 500;
+      font-size: 1.5rem;
+      color: #4c3f33;
+      border-left: 4px solid #b3a18c;
+      padding-left: 0.9rem;
+      margin-bottom: 1.2rem;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+
+    /* 优势卡片 */
+    .advantage-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin: 1.8rem 0;
+    }
+    .card {
+      flex: 1 1 200px;
+      background: #fffcf7;
+      border-radius: 14px;
+      padding: 1.6rem 1.2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      border: 1px solid #e3d9cd;
+    }
+    .card h3 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      color: #3f352c;
+    }
+    .card p {
+      font-size: 0.9rem;
+      color: #5d5042;
+      margin-bottom: 0;
+    }
+
+    /* 说明区区块 */
+    .explain-box {
+      background: #f0eae0;
+      border-left: 5px solid #baa68f;
+      padding: 1.5rem 1.8rem;
+      border-radius: 0 12px 12px 0;
+      margin: 1.8rem 0;
+    }
+    .explain-box p:last-child {
+      margin-bottom: 0;
+    }
+    .inset-note {
+      background: #fffbf5;
+      border: 1px solid #d4c8b6;
+      padding: 1rem 1.4rem;
+      border-radius: 10px;
+      font-size: 0.92rem;
+      color: #3b3229;
+      margin: 1.5rem 0;
+    }
+
+    /* FAQ 摘要 */
+    .faq-mini {
+      margin: 2rem 0 1rem;
+    }
+    .faq-item {
+      padding: 0.9rem 0;
+      border-bottom: 1px dashed #d3c7b8;
+    }
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+    .faq-q {
+      font-weight: 500;
+      margin-bottom: 0.2rem;
+      color: #3f352c;
+    }
+    .faq-a {
+      color: #5d4f40;
+      font-size: 0.92rem;
+    }
+
+    /* 底部链接 */
+    .footer-links {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid #d9cfbf;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    .footer-links a {
+      color: #4f3f30;
+      text-decoration: none;
+      border-bottom: 1px solid #b6a692;
+      transition: border-color 0.2s;
+    }
+    .footer-links a:hover {
+      border-bottom-color: #2f2a24;
+    }
+    .footer-meta {
+      margin-top: 1rem;
+      color: #8b7c6b;
+      font-size: 0.8rem;
+    }
+
+    /* 响应式 */
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2rem; }
+      .hero .subhead { font-size: 0.92rem; }
+      .advantage-grid { flex-direction: column; gap: 1rem; }
+      .card { flex: 1 1 auto; }
+      .explain-box { padding: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <!-- hero -->
+  <div class="hero">
+    <h1>竞彩 · 赛事信息站</h1>
+    <div class="subhead">
+      如果你正在寻找一个可以快速了解竞彩赛事、查看基本玩法介绍以及常见问题的网站，这个页面帮你整理好了核心内容。
+    </div>
+    <span class="tagline">⚽ 聚焦赛事 · 不夸大功能</span>
+  </div>
+
+  <!-- 优势区：用户能快速识别的特点 -->
+  <section>
+    <h2>为什么先看这里</h2>
+    <div class="advantage-grid">
+      <div class="card">
+        <h3>赛事类型覆盖</h3>
+        <p>足球、篮球等主流联赛的竞猜选项均有对应说明，方便你判断自己关注的项目是否被包含。</p>
+      </div>
+      <div class="card">
+        <h3>基础规则清晰</h3>
+        <p>让球、胜平负、大小分等常见玩法的注释与示例都有整理，适合刚开始接触的人对照理解。</p>
+      </div>
+      <div class="card">
+        <h3>导航直接</h3>
+        <p>页面没有复杂跳转，主要入口与说明都在明处，省去反复搜索的时间。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 说明区：从用户想快速识别用途展开 -->
+  <section>
+    <h2>这个网站主要说明什么</h2>
+    <div class="explain-box">
+      <p><strong>竞彩网</strong> 是一个围绕竞彩赛事信息展开的站点。当你打开 <a href="https://sporttery--m.com">竞彩网</a>，首先看到的是不同联赛的赛程与对阵，同时每个比赛日会更新对应的场次编号与数据参考。</p>
+      <p>页面提供的玩法说明包括胜平负、让球胜平负、比分、总进球数、半全场等基本类型，每一项都有对应的示意与解释。对于刚接触竞彩的用户来说，这些信息可以帮助你在短时间内建立对赛事竞猜的基本理解。</p>
+    </div>
+    <div class="inset-note">
+      💡 提示：网站内容以赛事展示与规则说明为主，不包含任何预测、推荐或保证收益的表述。请理性看待竞彩，量力参与。
+    </div>
+  </section>
+
+  <!-- 场景切入：用户可能会这样用 -->
+  <section>
+    <h2>你可能会这样使用</h2>
+    <p>假设你想确认今晚的足球联赛是否有自己关注的球队，或者想了解某个玩法的具体含义——打开 <a href="https://sporttery--m.com">竞彩网</a>，在赛程列表中找到对应场次，再对照旁边的玩法注释，几步就能看完。</p>
+    <p>如果你之前对“让球”或“大小分”的具体规则不太确定，页面里专门的说明板块把这些概念拆成了更易懂的短句。不需要额外查资料，在当前页面内就能获得解释。</p>
+  </section>
+
+  <!-- FAQ 摘要 -->
+  <section>
+    <h2>常见问题 · 摘要</h2>
+    <div class="faq-mini">
+      <div class="faq-item">
+        <div class="faq-q">Q: 竞彩和普通彩票是一回事吗？</div>
+        <div class="faq-a">A: 竞彩以体育赛事结果为基础，和数字型彩票有本质区别。网站主要提供赛事与玩法参考，不涉及开奖结果预测。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q: 我能否在网站上直接下单？</div>
+        <div class="faq-a">A: 本网站为信息展示页，不提供在线购买或投注功能。购彩请通过合法线下实体店或授权渠道。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q: 数据更新频率如何？</div>
+        <div class="faq-a">A: 赛程与场次信息通常在比赛日前更新，具体以页面实际展示为准。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 底部链接区 -->
+  <div class="footer-links">
+    <p>如需了解更多赛事详情，可直接前往 <a href="https://sporttery--m.com">竞彩网</a> 浏览完整内容。</p>
+    <div class="footer-meta">
+      页面仅供信息参考 · 请理性参与竞彩
+    </div>
+  </div>
+</div>
+</body>
+</html>
